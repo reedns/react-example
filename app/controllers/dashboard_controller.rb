@@ -1,6 +1,4 @@
-module Api
-  class DashboardController < ApplicationController
-    def index
-    end
+class DashboardController < ApplicationController
+  def index
   end
 end
