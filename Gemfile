@@ -15,6 +15,7 @@ gem 'react-rails'
 gem 'bootstrap-sass'
 gem 'puma', '~> 3.0'
 gem 'slim-rails'
+gem 'pg_search'
 
 group :development, :test do
   gem 'byebug'
