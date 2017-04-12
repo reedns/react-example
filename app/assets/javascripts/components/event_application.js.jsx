@@ -20,11 +20,20 @@ var EventApplication = React.createClass({
     })
   },
 
+  searchHandler: function(data) {
+    this.setState({ events: data });
+  },
+
   render: function() {
     return(
       <div className='container'>
         <div className='jumbotron'>
          <h1>ReactJS Tutorial</h1>
+        </div>
+        <div className='row'>
+          <div className='col-md-4'>
+            <SearchForm searchHandler={this.searchHandler} />
+          </div>
         </div>
         <div className='row'>
           <div className='col-md-12'>

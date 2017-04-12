@@ -1,7 +1,8 @@
 module Api
   class EventsController < ApplicationController
     def index
-      render json: Event.all.order(:event_date)
+      events = Event.order(:event_date).search(params[:query])
+      render json: events
     end
   end
 end
