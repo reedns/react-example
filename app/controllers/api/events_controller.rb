@@ -12,12 +12,12 @@ module Api
       else
         render nothing: true, status: :bad_request
       end
+    end
 
-      private
+    private
 
-      def event_params
-        params.require(:event).permit(:name, :description, :event_date, :place)
-      end
+    def event_params
+      params.require(:event).permit(:name, :description, :event_date, :place)
     end
   end
 end
